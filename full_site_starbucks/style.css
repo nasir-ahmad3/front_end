@@ -1,0 +1,158 @@
+@import url('http://fonts.cdnfonts.com/css/poppins');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	--font-color: #333;
+	--green-clor: #017143;
+}
+body{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+                                                
+}
+body > nav {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 30px 120px;
+}
+body > nav > .logo > .img{
+	width: 95px;
+	height: 95px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+}
+body > nav > .nav > ul{
+	height: 95px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+body > nav > .nav > ul > li{
+	list-style: none;
+}
+body > nav > .nav > ul > li > a{
+	text-decoration: none;
+	color: var(--font-color);
+	font-size: 19px;
+	text-transform: capitalize;
+	padding-left: 50px;
+	font-weight: 500;
+}
+main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+main > .left{
+	padding: 80px 130px;
+	width: 60%;
+}
+main > .left > p.title{
+	font-size: 72px;
+	font-weight: 550;
+	color: var(--font-color);
+}
+main > .left > p.title > span{
+	font-weight: bolder;
+	font-size: 82px;
+	color: var(--green-clor);
+}
+main > .left > p.description{
+	width: 90%;
+	margin-bottom: 50px;
+	color: var(--font-color);
+}
+main > .left > .button{
+	text-decoration: none;
+	color: #fff;
+	background-color: var(--green-clor);
+	padding: 12px 30px;
+	border-radius: 30px;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 19px;
+}
+main > .right{
+	width: 40%;
+	position: relative;
+	height: 590px;
+}
+main > .right > .color{
+	position: absolute;
+	top: 71px;
+	left: -110px;
+	width: 1500px;
+	height: 1500px;
+	border-radius: 50%;
+	display: none;
+}
+main > .right > .color.active{
+	display: block;
+}
+main > .right > .img{
+	padding-top: 30;
+	width: 410px;
+	height: 590px;
+	background-size: cover;
+	position: absolute;
+	left: 95px;
+	top: 20px;
+	display: none;
+}
+main > .right > .img.active{
+	display: block;
+}
+main aside {
+	width: 30px;
+	height: 100px;
+	background-size: red;
+	position: absolute;
+	top: 48%;
+	right: 45px;
+	transform: translateY(-50%);
+}
+main aside ul li{
+	list-style: none;
+}
+main aside ul li a{
+	text-decoration: none;
+}
+main aside ul li a i{
+	font-size: 35px;
+	margin-bottom: 35px;
+	color: #fff;
+}
+footer{
+	position: absolute;
+	bottom: 25px;
+	left: 0;
+	width: 100%;
+	height: 120px;
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+footer ul{
+	display: flex;
+}
+footer ul li{
+	list-style: none;
+	width: 60px;
+	height: 100px;
+	display: block;
+	background-position: center;
+	background-size: cover;
+	margin: 0 30px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+footer ul li:hover{
+	margin-top: -20px;
+}
